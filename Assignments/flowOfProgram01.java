@@ -46,6 +46,23 @@ public class flowOfProgram01 {
 
         System.out.println("HCF : " + p);
 
+        // 5. Keep taking numbers as inputs till the user enters ‘x’, after that print sum of all.
+
+        Scanner sc = new Scanner(System.in);
+        int u = 0;
+        int sum = 0;
+
+        System.out.print("Enter x : ");
+
+        while (sc.hasNextInt()){
+            sum += u;
+            System.out.print("Enter x : ");
+            u = sc.nextInt();
+        }
+
+        System.out.println("SUM : " + sum);
+        
+
 
     }
 }
