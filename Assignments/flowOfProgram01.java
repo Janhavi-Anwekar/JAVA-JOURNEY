@@ -13,6 +13,11 @@ public class flowOfProgram01 {
         } else {
             System.out.println("Its not");
         }
+
+        //2. Take two numbers and print the sum of both.
+        int a = 5, b = 7;
+        System.out.println(a+b);
+
     }
 }
 
