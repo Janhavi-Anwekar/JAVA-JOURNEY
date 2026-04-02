@@ -24,6 +24,28 @@ public class flowOfProgram01 {
         for(int i=1; i<=10; i++) {
             System.out.print(n*i+" ");
         }
+        System.out.println();
+
+        //4. Take 2 numbers as inputs and find their HCF and LCM.
+        int x = 200 ,y = 30;
+
+        int lcm = y;
+        while(lcm % x != 0 || lcm % y != 0){
+            lcm++;
+        }
+        System.out.println("LCM : " + lcm);
+
+
+        int p = x;
+        int q = y;
+        while(q != 0) {
+            int temp =q;
+            q = p % q;
+            p = temp;
+        }
+
+        System.out.println("HCF : " + p);
+
 
     }
 }
