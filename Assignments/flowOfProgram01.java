@@ -18,6 +18,13 @@ public class flowOfProgram01 {
         int a = 5, b = 7;
         System.out.println(a+b);
 
+        //3. Take a number as input and print the multiplication table for it.
+        int n = 5;
+
+        for(int i=1; i<=10; i++) {
+            System.out.print(n*i+" ");
+        }
+
     }
 }
 
