@@ -91,9 +91,31 @@ public class conditionalLoops03 {
     }
     return findHCF(b, a % b);
 }
+    //20. LCM Of Two Numbers
+    static int findLCM(int a, int b) {
+        if (a == 0 || b == 0) return 0; // Edge case: LCM of 0 is 0
+        return Math.abs(a * b) / findHCF(a, b);
+    }
+
+    //22. Perfect Number In Java
+    public static boolean perfectN(int n) {
+
+        if(n <= 1) return false;
+        int sum = 1;
+        for(int i=2; i<Math.sqrt((int)n); i++) {
+            if(n % i == 0) {
+                sum += i;
+                if(i != n/i){
+                    sum += n/i;
+                }
+            }
+        }
+        return sum == n;
+    }
     
     public static void main(String[] args) {
         
+        System.out.println(perfectN(7));
             
         
 
