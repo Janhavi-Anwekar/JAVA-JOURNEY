@@ -1,6 +1,9 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class conditionalLoops03 {
+
+    static Scanner sc = new Scanner(System.in);
+    
 
     // 23. Input a number and print all the factors of that number (use loops)
     public static void printFactors(int a) {
@@ -112,11 +115,66 @@ public class conditionalLoops03 {
         }
         return sum == n;
     }
+
+    // 25. Kunal is allowed to go out with his friends only on the even days of a given month.
+    //  Write a program to count the number of days he can go out in the month of August.
+    public static int getDays(String m) {
+        switch (m) {
+            case "jan":
+            case "mar":
+            case "may":
+            case "jul":
+            case "aug":
+            case "oct":
+            case "dec":
+                return 31;
+            default:
+                break;
+        }
+        return 30;
+    }
+
+    public static int countDays(String month) {
+        int days = getDays(month);
+        return days/2;
+
+    }
     
+    //26. Write a program to print the sum of negative numbers, sum of positive even numbers and the 
+    // sum of positive odd numbers from a list of numbers (N) entered by the user. The list terminates when the user enters a zero.
+
+    public static void print(){
+
+        System.out.print("Enter x : ");
+        int n = sc.nextInt();
+        int sumOfnegative = 0;
+        int sumOfPositiveEven = 0;
+        int sumOfPositiveOdd = 0;
+
+        while(n != 0) {
+            if(n < 0){
+                sumOfnegative += n;
+            } else {
+                if(n % 2 == 0) {
+                    sumOfPositiveEven += n;
+                } else {
+                    sumOfPositiveOdd += n;
+                }
+            }
+            System.out.print("Enter x : ");
+            n = sc.nextInt();
+        }
+        System.out.println("positive Even : " + sumOfPositiveEven);
+        System.out.println("positive odd : "+sumOfPositiveOdd);
+        System.out.println("negative : "+ sumOfnegative);
+    }
+
+
     public static void main(String[] args) {
         
-        
             
+       
+
         
 
         
