@@ -91,6 +91,11 @@ public class conditionalLoops03 {
     }
     return findHCF(b, a % b);
 }
+    //20. LCM Of Two Numbers
+    static int findLCM(int a, int b) {
+        if (a == 0 || b == 0) return 0; // Edge case: LCM of 0 is 0
+        return Math.abs(a * b) / findGCD(a, b);
+    }
     
     public static void main(String[] args) {
         
