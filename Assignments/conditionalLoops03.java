@@ -115,7 +115,7 @@ public class conditionalLoops03 {
     
     public static void main(String[] args) {
         
-        System.out.println(perfectN(7));
+        
             
         
 
