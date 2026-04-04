@@ -83,6 +83,14 @@ public class conditionalLoops03 {
 
         return false;
     } 
+
+    //19. HCF Of Two Numbers Program
+    public static int findHCF(int a, int b) {
+    if (b == 0) {
+        return a;
+    }
+    return findHCF(b, a % b);
+}
     
     public static void main(String[] args) {
         
