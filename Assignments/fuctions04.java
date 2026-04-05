@@ -46,7 +46,7 @@ public class fuctions04 {
     }
     public static void main(String[] args) {
 
-        printPrime(3, 15);
+        
 
     }
 }
